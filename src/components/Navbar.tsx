@@ -6,6 +6,7 @@ import {
   HStack,
   Img,
   useBreakpointValue,
+  useMediaQuery,
 } from '@chakra-ui/react'
 import {motion} from 'framer-motion'
 import useScrollPosition from 'hooks/useScrollPosition'
@@ -20,6 +21,8 @@ const MotionBox = motion<BoxProps>(Box)
 export const Navbar = () => {
   const hasTestimonial = content.testimonials ? content.testimonials.length > 0 : false
   const scrollPosition = useScrollPosition()
+  const [isLargerThan768] = useMediaQuery('(min-height: 767px)')
+  const [isSmallerThan810] = useMediaQuery('(max-height: 810px)')
 
   return (
     <MotionBox
@@ -34,9 +37,9 @@ export const Navbar = () => {
       opacity={scrollPosition < 80 ? 1 : 0}
     >
       <Box as="header">
-        <Box maxW="6xl" mx="auto" py="4" px={{base: '6', md: '8'}}>
+        <Box maxW="6xl" mx="auto"  px={{base: '6', md: '8'}} mt={isLargerThan768 && isSmallerThan810 ? '4.4rem' : ''}>
         <Flex as="nav" justify={useBreakpointValue({ base: "center", md: "space-between" })}>
-              <Box as="a" href="#" rel="home">
+              <Box as="a" href="#" rel="home" ml={{xl:'3rem', '2xl':'0'}}>
                 <Img src={"./logo.png"} alt="Envelope app logo" w={270}/>
               </Box>
             <HStack spacing="8">

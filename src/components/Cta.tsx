@@ -29,7 +29,7 @@ export const Cta = () => (
           </Text>
         </Stack>
         <Stack spacing="3" direction={{ base: 'column', sm: 'row' }} justify={'center'}  alignItems={'center'}>
-          <Button variant="secondary" size="lg" colorScheme="green" onClick={cta}>
+          <Button size="lg" colorScheme={content.colors.scheme} onClick={cta}>
             Marcar Consulta
           </Button>
         </Stack>

@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Divider, Flex, Stack } from "@chakra-ui/react";
+import { AspectRatio, Box, chakra, Divider, Flex, Stack } from "@chakra-ui/react";
 import * as React from "react";
 import { Logo } from "./Logo";
 
@@ -52,11 +52,13 @@ export const Video = () => {
               fontSize={{ base: "xl", lg: "2xl" }}
               whiteSpace={"break-spaces"}
               as="blockquote"
+              fontWeight="normal"
+              color="gray.700"
             >
-              {`Área de atuação: gastroenterologia.
-Títulos: cirurgia geral e endoscopia digestiva.
-Consulta focada em diagnósticar e prevenir as dores abdominais.
-Exames: Endoscopia, Colonoscopia, COLANGIOPANCREATOGRAFIA RETROGRADA ENDOSCÓPICA (CPRE)`}
+              <chakra.p><chakra.span fontStyle={'italic'} color="gray.800">Área de atuação</chakra.span>: gastroenterologia.</chakra.p>
+              <chakra.p><chakra.span fontStyle={'italic'} color="gray.800">Títulos</chakra.span>: cirurgia geral e endoscopia digestiva.</chakra.p>
+              <chakra.p>Consulta focada em diagnósticar e prevenir as dores abdominais.</chakra.p>
+              <chakra.p><chakra.span fontStyle={'italic'} color="gray.800">Exames</chakra.span>: Endoscopia, Colonoscopia, COLANGIOPANCREATOGRAFIA RETROGRADA ENDOSCÓPICA (CPRE).</chakra.p>
             </Box>
           </Box>
         </Flex>
