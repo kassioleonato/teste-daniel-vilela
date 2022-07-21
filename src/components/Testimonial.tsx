@@ -15,7 +15,7 @@ export const Testimonial = () => {
   const testimonial = React.useMemo(() => {
     if (!testimonials) return undefined
     //automatically add one to the index to account for the quote icon
-    const time = 4000
+    const time = 5000
     setTimeout(() => {
       setTestimonialIndex((testimonialIndex + 1) % testimonials.length)
     }
