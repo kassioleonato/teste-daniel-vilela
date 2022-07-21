@@ -72,7 +72,12 @@ export const Presentation = () => {
               <Button
                 as="a"
                 href="#"
-                colorScheme={content.colors.scheme}
+                bgColor={content.colors.buttonCollor}
+                color="white"
+                _hover={{
+                  cursor: "pointer",
+                  bg: content.colors.primary,
+                }}
                 px="8"
                 rounded="full"
                 size="lg"
@@ -80,7 +85,7 @@ export const Presentation = () => {
                 fontWeight="bold"
                 onClick={cta}
               >
-                Marcar consulta
+                Agendar consulta/exame
               </Button>
             </MotionStack>
           </Flex>

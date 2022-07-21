@@ -4,10 +4,7 @@ import {
   Center,
   Heading,
   LightMode,
-  SimpleGrid,
   Text,
-  useBreakpoint,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import * as React from "react";
 import { ctaSecondary } from "utils/cta";
@@ -60,14 +57,19 @@ export const Hero = () => {
           <LightMode>
             <Button
               onClick={ctaSecondary}
-              colorScheme={content.colors.scheme}
+              bgColor={content.colors.buttonCollor}
+              color="white"
+              _hover={{
+                cursor: "pointer",
+                bg: content.colors.primary,
+              }}
               size="lg"
               mt="6"
               fontWeight="bold"
               fontSize="md"
               rounded="full"
             >
-              Conhecer meu trabalho
+              Conheça meu trabalho
             </Button>
           </LightMode>
         </Center>

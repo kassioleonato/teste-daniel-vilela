@@ -46,7 +46,7 @@ export default function Aboutme() {
         color="blackAlpha.800"
         w={{ base: "100%", xl: "50%" }}
       >
-        <MotionHeading as={'h4'} size={"sm"}>
+        <MotionHeading as={"h4"} size={"sm"}>
           Sobre
         </MotionHeading>
         <MotionHeading
@@ -67,7 +67,7 @@ export default function Aboutme() {
           whileInView={{ x: [-24, 0], opacity: [0, 1] }}
           // @ts-ignore
           transition={{ duration: 1, duration: 0.4 }}
-          lineHeight = "1.9"
+          lineHeight="1.9"
         >
           {content.presentation.content}
         </MotionText>
@@ -84,7 +84,12 @@ export default function Aboutme() {
           <Button
             as="a"
             href="#"
-            colorScheme={content.colors.scheme}
+            bgColor={content.colors.buttonCollor}
+            color="white"
+            _hover={{
+              cursor: "pointer",
+              bg: content.colors.primary,
+            }}
             px="8"
             rounded="full"
             size="lg"

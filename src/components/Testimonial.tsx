@@ -14,10 +14,17 @@ export const Testimonial = () => {
 
   const testimonial = React.useMemo(() => {
     if (!testimonials) return undefined
+    //automatically add one to the index to account for the quote icon
+    const time = 4000
+    setTimeout(() => {
+      setTestimonialIndex((testimonialIndex + 1) % testimonials.length)
+    }
+      , time)
     return testimonials[testimonialIndex]
+
   }, [testimonialIndex, testimonials])
 
-  if (!testimonials?.length) return null
+
 
   return (
   <MotionBox as="section" whileInView={{ opacity: [0, 1], scale: [0.80, 1] }} id="testimonials" py="30">
@@ -37,12 +44,12 @@ export const Testimonial = () => {
         />
       </Flex>
       <HStack justify="center" spacing="4" mt="8" color='gray.400'>
-        {testimonials.map((_, index) => {
+        {testimonials?.map((_, index) => {
           const isActive = index === testimonialIndex
           return (
           <Circle
             key={`cirecle-${index}`}
-            size={isActive ? "3" : "2"}
+            size={isActive ? "4" : "3"}
             bg={isActive ? content.colors.primary : 'gray.300'}
             onClick={() => setTestimonialIndex(index)}
             _hover={{

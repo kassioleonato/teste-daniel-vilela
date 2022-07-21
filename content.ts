@@ -50,6 +50,7 @@ type Content = {
     addressLink: string;
   };
   colors: {
+    buttonCollor: string;
     scheme: ThemeTypings["colorSchemes"];
     primaryLight: string;
     primary: string;
@@ -64,7 +65,7 @@ const content: Content = {
   },
   social: {
     whatsAppNumber: "5583981820066",
-    instagramLink: "danielvilelamartins@gmail.com",
+    instagramLink: "https://www.instagram.com/dr.danielmartinss/",
     email: "danielvilelamartins@gmail.com",
   },
   hero: {
@@ -74,11 +75,6 @@ const content: Content = {
   features: {
     title: "Informações",
     items: [
-      {
-        icon: FiCalendar,
-        title: "Horário de Funcionamento",
-        content: "Segunda a sexta das 07h às 18h.",
-      },
       {
         icon: FiShield,
         title: "Prevenção e Tratamento",
@@ -189,10 +185,11 @@ Durante todo o tratamento você vai ter e o suporte da nossa equipe para agendam
       "https://www.google.com/maps/place/R.+Delmiro+Gouv%C3%AAia,+369+-+Centen%C3%A1rio,+Campina+Grande+-+PB,+58400-422/data=!4m2!3m1!1s0x7ac1e3eaefeaba9:0x679ed9b26f8515f2?sa=X&ved=2ahUKEwjVjfzxtfb4AhXkDdQKHQF7BCMQ8gF6BAgWEAE",
   },
   colors: {
+    buttonCollor: '#099FA4',
     scheme: "green",
     primaryLight: "lightgreen",
-    primary: "lightgreen",
-    primaryDark: "darkgreen",
+    primary: "#1087A3",
+    primaryDark: "#196FA2",
   },
 };
 

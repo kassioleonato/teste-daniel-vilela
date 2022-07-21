@@ -70,11 +70,16 @@ export const Navbar = () => {
             <Flex align="center">
               <HStack spacing="8" display={{ base: "none", md: "flex" }}>
                 <Button
-                  colorScheme={content.colors.scheme}
                   rounded="full"
                   onClick={cta}
+                  bgColor={content.colors.buttonCollor}
+                  color="white"
+                  _hover={{
+                    cursor: "pointer",
+                    bg: content.colors.primary,
+                  }}
                 >
-                  Marcar consulta
+                  Agendar consulta/exame
                 </Button>
               </HStack>
               <Box ml="5">

@@ -6,7 +6,7 @@ import content from '../../content'
 const MotionBox = motion<BoxProps>(Box)
 
 export const FAQ = () => (
-  <MotionBox as="section" whileInView={{ opacity: [0, 1], scale: [0.80, 1] }} bg="gray.50" id="faq" py={40}>
+  <MotionBox as="section" whileInView={{ opacity: [0, 1], scale: [0.80, 1] }} bg="gray.50" id="faq" pt={'7rem'} pb={'4rem'}>
     <Heading mb={24} textAlign="center" size="2xl" color={content.colors.primary}>Perguntas Frequentes</Heading>
 
     <Box maxW="5xl" mx="auto" px={{ base: '2', md: '4' }} pt="6" pb="16">
