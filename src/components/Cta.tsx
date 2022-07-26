@@ -18,12 +18,11 @@ const MotionBox = motion<BoxProps>(Box);
 const MotionStack = motion<StackProps>(Stack);
 
 export const Cta = () => (
-  <MotionBox as="section" bg="gray.50" id="contact">
-    <Container py={{ base: "16", md: "24" }}>
+  <MotionBox as="section" id="contact">
+    <Container py={{ base: "16", md: "24" }} maxW={"6xl"}>
       <Box
         bg="bg-surface"
-        boxShadow={"sm"}
-        borderRadius="xl"
+        boxShadow={"xl"}
         px={{ base: "6", lg: "16" }}
         py={{ base: "10", lg: "16" }}
       >
@@ -33,7 +32,7 @@ export const Cta = () => (
           justify="space-evenly"
         >
           <Stack spacing="4" maxW="2xl">
-            <Heading size="sm">Marcar consultas</Heading>
+            <Heading size="lg" fontWeight={'semibold'}>Marcar consultas</Heading>
             <Text
               color="muted"
               fontSize={useBreakpointValue({ base: "lg", lg: "xl" })}

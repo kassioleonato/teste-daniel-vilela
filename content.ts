@@ -4,6 +4,7 @@ import { FiAward, FiCalendar, FiShield, FiSmile } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 type Content = {
+  nameAPI: string;
   head: {
     metaDescription: string;
     title: string;
@@ -59,6 +60,7 @@ type Content = {
 };
 
 const content: Content = {
+  nameAPI: "daniel-vilela",
   head: {
     metaDescription: "Site do Dr. Daniel Vilela",
     title: "Dr. Daniel Vilela",
