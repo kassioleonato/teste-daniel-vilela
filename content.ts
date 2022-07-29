@@ -132,7 +132,7 @@ Após o diagnóstico da causa o tratamento será focado em eliminar os gases.`,
       {
         question: "Como é feito o preparo para colonoscopia?",
         answer:
-          "Um dia antes do exame dieta pastosa, hidratacao é remédios para limpar o intestino como Manitol, dulcolax, picossulfato de sódio ou lactulose. É importante ressaltar que você não vai passar fome durante o preparo.",
+          "Um dia antes do exame é passado uma dieta pastosa, hidratação, e remédios para limpar o intestino. É importante ressaltar que você não vai passar fome durante o preparo.",
       },
     ],
   },
@@ -187,7 +187,7 @@ Durante todo o tratamento você vai ter e o suporte da nossa equipe para agendam
       "https://www.google.com/maps/place/R.+Delmiro+Gouv%C3%AAia,+369+-+Centen%C3%A1rio,+Campina+Grande+-+PB,+58400-422/data=!4m2!3m1!1s0x7ac1e3eaefeaba9:0x679ed9b26f8515f2?sa=X&ved=2ahUKEwjVjfzxtfb4AhXkDdQKHQF7BCMQ8gF6BAgWEAE",
   },
   colors: {
-    buttonCollor: '#099FA4',
+    buttonCollor: "#099FA4",
     scheme: "green",
     primaryLight: "lightgreen",
     primary: "#1087A3",
